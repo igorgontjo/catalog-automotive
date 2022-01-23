@@ -288,6 +288,10 @@ section .card-item button:hover {
     padding-top: 10%;
 }
 
+.wrapper-about h3{
+    margin-bottom: 20px;
+}
+
 .right h3 {
     text-align: right;
     width: 90%;
