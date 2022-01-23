@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Font Family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray: #ededed;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: var(--orange);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+nav {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 170px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00285f83;
+}
+
+nav ul button {
+    border: 1px solid var(--blue);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--blue);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+nav ul button:hover {
+    transition: background, color 0.7s;
+    background: var(--blue);
+    color: white;
+}
+
+.header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 400px;
+    background: var(--blue);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 50%;
+    padding: 20px;
+}
+
+.header-block .right img {
+    width: 40%;
+    position: absolute;
+    right: 5%;
+    bottom: -22px;
+    animation: bounceInRight 2s;
+}
+
+.feature-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    animation: bounceInRight 2.5s;
+}
+
+.feature-text-content p {
+    margin-bottom: 25px;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.feature-text-content p strong {
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.feature-text-content p strong:hover {
+    color: var(--orange);
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.feature-text-content ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.left {
+    background-color: var(--gray);
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.left .icon-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .icon-login img {
+    width: 50px;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.left .icon-login p{
+    margin-bottom: 20px;
+}
+
+.header-block .left .input-login .field {
+    padding-bottom: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.left .input-login .field span img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 9px;
+    margin-right: 7px;
+}
+
+.left .input-login .field input {
+    margin: 0 auto;
+    width: 230px;
+    height: 40px;
+    text-indent: 10px;
+    justify-content: left;
+}
+
+.buttons-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.buttons-wrap button {
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    border: rgba(0, 0, 0, 0.7) solid 1px;
+}
+
+.buttons-wrap button:hover {
+    color: white;
+    background: var(--blue);
+    transition: background, 0.7s;
+}
+
+.buttons-wrap h6 strong {
+    margin-left: 2px;
+}
+
+.buttons-wrap h6 strong:hover {
+    cursor: pointer;
+    color: var(--blue);
+    font-size: 1.2em;
+    margin-left: 3px;
+}
