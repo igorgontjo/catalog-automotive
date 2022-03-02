@@ -1,1 +1,1 @@
-Esse foi um projeto de estudos que fiz inspirado no canal do Youtube (DevSuperior). Foi utilizadas linguagens HTML e estilização CSS.
+Esse foi um projeto de estudo que fiz inspirado no canal do Youtube (DevSuperior), se trata de um e-commerce do segmento automotivo. Foi utilizada linguagem HTML e estilização CSS.
